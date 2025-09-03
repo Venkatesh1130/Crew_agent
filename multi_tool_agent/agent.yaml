@@ -1,0 +1,32 @@
+manifestVersion: 1
+name: "sql_agent"
+description: An Agent that converts natural language to SQL queries.
+
+framework: Custom
+license: Apache 2.0
+languages: 
+  - Python
+githubUrl: https://github.com/Venkatesh1130/Crew_agent
+avgRunTimeSeconds: 5.0
+avgRunTokens: 5000
+examples: 
+  cli:
+    - command: beeai run sql_agent "How to create table in SQL?"
+      processingSteps:
+        - The agent is triggered with the natural language input
+        - It processes the input to generate the corresponding SQL query
+        - Returns the generated SQL query as output
+ui: 
+  type: hands-off
+  userGreeting: Define your task
+
+fullDescription: |
+  This agent is designed to convert natural language queries into SQL queries. It leverages a language model to interpret user input and generate the appropriate SQL commands.
+
+env:
+  - name: LLM_MODEL
+    required: false
+    description: "Model to use from the specified OpenAI-compatible API."
+  - name: LLM_API_KEY
+    required: false
+    description: "API key for OpenAI-compatible API endpoint"
