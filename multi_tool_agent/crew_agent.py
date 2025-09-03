@@ -1,9 +1,9 @@
 from crewai import Agent, Crew, Task, LLM
-
+import os
 
 llm = LLM(
-    model="groq/deepseek-r1-distill-llama-70b",  
-    api_key="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"  
+    model=os.getenv("LLM_MODEL", "groq/deepseek-r1-distill-llama-70b"), 
+    api_key=os.getenv("LLM_API_KEY")  
 )
 
 class SqlAgent:
