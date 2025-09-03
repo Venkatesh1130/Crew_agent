@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environments
+venv/
+.env/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Tests (optional if you want to skip)
+test.py

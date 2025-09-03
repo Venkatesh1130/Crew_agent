@@ -1,0 +1,7 @@
+a2a-sdk
+uvicorn
+beeai-framework[a2a]
+crewai
+beeai-framework
+beeai-sdk
+acp-sdk
