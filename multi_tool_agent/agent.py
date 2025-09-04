@@ -53,7 +53,7 @@ async def sql_agent(input: list[Message], context: Context):
 
 
 def run():
-    server.run(host=os.getenv("HOST", "0.0.0.0"), port=int(os.getenv("PORT", 8000)))
+    server.run(host=os.getenv("HOST", "0.0.0.0"), port=int(os.getenv("PORT", 8080)))
 
 
 if __name__ == "__main__":

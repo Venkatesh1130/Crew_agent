@@ -23,7 +23,6 @@ if __name__ == '__main__':
         tags=['sql'],
         examples=['select * from user;'],
     )
-   
 
     public_agent_card = AgentCard(
         name='Sql Agent',
@@ -33,10 +32,8 @@ if __name__ == '__main__':
         default_input_modes=['text'],
         default_output_modes=['text'],
         capabilities=AgentCapabilities(streaming=True),
-        skills=[skill],  
+        skills=[skill],
     )
-  
-    
 
     request_handler = DefaultRequestHandler(
         agent_executor=SqlAgentExecutor(),
